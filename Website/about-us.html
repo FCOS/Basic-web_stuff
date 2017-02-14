@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	
+		<script type="text/javascript">
+			//var myVariable:String = "hello World";
+			//myVariable = "Hello world";
+			//alert(myVariable);
+			
+			//var myName = new Array ( "Sean","Bob","John","Tim" );
+			//var scoretype = "goals";
+			//var shotsscored = 3;
+			//var shotstaken = 5;
+			//var myStatement = myName[2] + " " + "scored" + " " + shotsscored + " " + "," + 
+			//"but unfortuantly" + "," + " " + "he missed" + (shotstaken - shotsscored) ;
+			
+			//alert(myStatement);
+			
+			var correctanswer = 7;
+			
+			function checkgoals (numgoals)
+			{
+				if (numgoals == correctanswer)
+				{
+					alert("Yes you did, and what a game!");
+				}
+				else if (numgoals > correctanswer)
+				{
+					alert("Really? I don't remember that many.... try again.");
+				}
+				else if (numgoals < correctanswer)
+				{
+					alert("You're being modest! You scored more then that!")
+				
+			}
+		</script>
+	
+		<title> Homepage </title>
+	
+		<!--[if IE]>
+			<script>
+				document.createElement("header" );
+				document.createElement("footer" );
+				document.createElement("section" );
+				document.createElement("nav" );
+			</script>
+		<![endif]-->
+	
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		
+	</head>
+	
+	<body>
+		<div id="backbanner">
+	
+		<*img id="banner-left" src="images/waterpolosidebanner.png">
+		<*img id="banner-right" src="images/waterpolosidebanner.png">	
+			
+		<div id="wrapper">
+		
+		<header>
+			<img id="banner-top" src="images/waterpoloheadbanner.png">
+		</header>
+	
+		<nav>
+			<ul>
+				<li><a href="Homepage.html">Home</a></li>
+				<li><a href="about-us.html">About us</a></li>
+				<li><a href="Rules.html">Rules</a></li>
+				<li><a href="join-us.html">Join us!</a></li>
+				<li><a href="contact-us.html">Contact us!</a></li>
+			</ul>
+		</nav>
+		
+		<section id="mainContent">
+			<h2>About Us</h2>
+			<p>
+			To the left, you can see the national aquatic centre in Dublin. This is the home of Drogheda Waterpolo. Every tuesday evening, the senior and U-16 teams train here for 1 hour of pure waterpolo.
+			We started training here in 2010, and since then, we have inproved greatly. We compete in the all-Irelands, the Leinster 1 league, and the Leinster 2 league. Our badge id the drogheda star and crescent.
+			We have a International standard coach, and a national winning team. If you think you have what it takes to play, come down and try.</br>
+			
+			</p>
+			
+			<p>
+			Here's a fun game for you to try!, guess the amount of goals you scored in the game.
+			<form  method="POST" name="goalsForm" onSubmit="checkgoals(document.goalsForm.numgoals.value) ;">
+				<input type="text" name="numgoals" id="numgoals" />
+				<input type="submit" name="submit" />
+			</form>
+			
+			</p>
+			
+		</section>
+		
+		<section id="sidebar">
+			<p>
+				<img id="NAC" src="images/Pool.JPG"
+			</p>
+		</section>
+		
+		<div class="clearit"></div>
+		
+		<footer>
+			Fergal O'Shea
+		</footer>
+		
+		<div>
+		</div>
+	</body>
+</html>
